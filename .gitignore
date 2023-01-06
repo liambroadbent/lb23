@@ -6,3 +6,23 @@ node_modules
 .output
 .env
 dist
+
+
+client id - 95571954d39e49b8a78b657103cc8812
+secret - 1f5b372b096f4043b05eefc25533801c
+
+after going to
+
+https://accounts.spotify.com/authorize?client_id=95571954d39e49b8a78b657103cc8812&response_type=code&redirect_uri=http
+%3A%2F%2Flocalhost:3000&scope=user-read-currently-playing,
+user-read-playback-state,
+user-read-recently-played
+
+I was redirected to
+
+http://localhost:3000/?code=AQCmZlPtXoNlMsYD5NmR3yKGOIfYzNJnI1fi4mZ_d0NT7p2GoKmrQxt9--3y_l1USlclh4WL5hj51pIMhc976HvHKJAte5zudTcKoOAEyWq09-zi-r1TX835ixk6hLAWFQCehxcGX5iPsTCCUeOiqXwpaTbOtKjtEgYD0RthWOLc5Ohby571Cm8G769Jv1UdfwX7w4psGSob3oWRLUmybWLtMv4TfiwxTUi6Lh45RJaqsRTWB8-ehleCDTL3XiE-M0I3iBOUBagYCbs
+
+
+btoa('id:secret') == OTU1NzE5NTRkMzllNDliOGE3OGI2NTcxMDNjYzg4MTI6MWY1YjM3MmIwOTZmNDA0M2IwNWVlZmMyNTUzMzgwMWM=
+
+curl -H "Authorization: Basic OTU1NzE5NTRkMzllNDliOGE3OGI2NTcxMDNjYzg4MTI6MWY1YjM3MmIwOTZmNDA0M2IwNWVlZmMyNTUzMzgwMWM=" -d grant_type=authorization_code -d code=OTU1NzE5NTRkMzllNDliOGE3OGI2NTcxMDNjYzg4MTI6MWY1YjM3MmIwOTZmNDA0M2IwNWVlZmMyNTUzMzgwMWM= -d redirect_uri=http://localhost:3000 https://accounts.spotify.com/api/token
