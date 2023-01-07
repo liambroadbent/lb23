@@ -3,9 +3,12 @@ export default defineNuxtConfig({
     app: {
         head: {      
             charset: 'utf-16',
+            // lang: 'en',
             viewport: 'width=500, initial-scale=1',
             title: 'Creator, Visionary, Dreamweaver',
- // <meta name="description" content="My amazing site"> 
+            htmlAttrs: {
+                lang: 'en'
+              },
             meta: [{
                 name: 'description', 
                 content: ' Liam has a proven track record of delivering high-quality work that exceeds client expectations.'
@@ -30,7 +33,4 @@ export default defineNuxtConfig({
               },
          }]
     ],
-    
-      
-
 })
