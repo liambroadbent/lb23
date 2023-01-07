@@ -10,6 +10,7 @@ export default defineNuxtConfig({
                 name: 'description', 
                 content: ' Liam has a proven track record of delivering high-quality work that exceeds client expectations.'
             }],
+            link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]
         },
     },
     modules: [
