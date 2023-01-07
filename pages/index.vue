@@ -4,7 +4,7 @@
 
 <template>
     <div class="page">
-        <h1>Liam Broadbent</h1>
+        <h1>Liam Broadbent?</h1>
         <a href="https://www.linkedin.com/in/liambroadbent/">Get in touch</a>
         <ClientOnly>
             <TheExperience />
@@ -16,7 +16,6 @@
   
 <style>
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -32,12 +31,14 @@ body {
     flex-direction: column;
 }
 h1 {
+    font-family: Monsterrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     font-size: clamp(1.5rem, 3.5vw, 7rem);
     text-transform: uppercase;
 }
 
 a {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: clamp(1.5rem, 2.5vw, 5rem);
     margin-top: clamp(1.5rem, 1vh, 7rem);
